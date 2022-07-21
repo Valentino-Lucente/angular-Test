@@ -1,0 +1,14 @@
+.prova {
+  width: 18rem;
+  height: auto;
+  display: flex;
+  align-items: stretch;
+  margin: auto;
+}
+.prova1 {
+  padding-top: 2%;
+  padding-bottom: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin: auto;
+}

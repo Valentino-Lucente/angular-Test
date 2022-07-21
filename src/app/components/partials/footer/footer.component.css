@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body  {
+  /* fonto e grandezza font*/
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.row {
+  /*si occupa delle righe, accomoda lo spostamento dell'elenco con il dimensionamento della pagina */
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  /* solamente il colore di background del footer e lo spazio tra gli elementi */
+  background-color: #24262b;
+  padding: 20px 0;
+}
+.footer-col {
+  /* si occupa delle colonne e del loro ridimensionamento */
+  width: 25%;
+  padding: 0;
+}
+.footer-col h4 {
+  /*stabilisco la grandezza del font e del colore dei titoli */
+  font-size: 25px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  /* barra rossa sotto ai titoli */
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px; /* spazio tra le scritte in verticale */
+}
+.footer-col ul li a {
+  /* stato degli elementi dell'elenco pre-hover, potete notare che dispongo qui "transition" cioè il tempo che ci metterà a passare allo stato dell'hover dal suo stato normale e viceversa */
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  /* colore e leggero spostamento quando avviene l'hover (cioè quando ci passa sopra il mouse) */
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  /* stesso meccaniscmo dei font, qui però inserisco il background-color per il cambiamento del color  (color -> background-color)*/
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+.content {
+  display: block;
+  padding: 10px;
+  margin: 15px auto;
+  text-align: center;
+  font: 25px Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  width: 300px;
+  display: flex;
+}
+.foot {
+  display: inline;
+  line-height: 70px;
+}
+/* dove si trova il logo, lo inizializzo con un filtro grigio e una transizione di 0.6, uso webkit per la scala di grigio (e anche la transizione solo per webkit), la scala di grigio viene usata perché rende il contrasto con l'hover molto più bello */
+.content img {
+  height: 150px;
+  width: 150px;
+  float: left;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all .6s ease-in-out;
+  transition: 0.6s;
+}
+/* hover del logo */
+.content img:hover {
+  filter: invert(400%);
+  filter: brightness(4);
+  -webkit-filter: grayscale(-100);
+  -webkit-transform: scale(1.10);
+}
+/* tiene il footer esteso evitando gli spazi sui lati */
+footer {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+}
