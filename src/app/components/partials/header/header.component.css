@@ -1,7 +1,7 @@
 
 header{
   position: relative;
-  background: white;
+  background: rgb(247, 190, 190);
   padding: 0;
   border-bottom: 1px solid #e72929;
 }
@@ -58,6 +58,83 @@ a span{
   font-size:0.9rem;
 }
 
+
+/*selettore numero counter nel cerchio*/
+h3{
+  margin-top: 8.5px;
+  font-size: x-small;
+}
+/*selettore riferito all'immagine del  carrello*/
+img{
+  margin: 5px;
+   width: 25px;
+   height: 25px;
+}
+/*selettore riferito allo sfondo grigio carrello*/
+.icon-button{
+
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   color: #333;
+   background-color: #dddddd;
+   border: none;
+   outline: none;
+   border-radius: 50%;
+   transition: transform 0.3s ease;
+}
+.icon-button:hover{
+  transform: translate(10px, 0px);
+
+}
+
+/*selettore riferito al ccounter del carrello (cerchio arancione)*/
+.icon-button__bedge{
+           position: absolute;
+           top: -10px;
+           right: -10px;
+           width: 24px;
+           height: 24px;
+           background-color: orange;
+           color: #ffffff;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           border-radius: 50%;
+
+}
+/*selettore riferito ai bottoni + e -*/
+.btn{
+  height: 30px;
+  width: 45px;
+  align-items: center;
+  background-color: rgba(255, 166, 12, 0.882);
+  border-radius: 15%;
+  font-weight: bold;
+  transition: all 0.2 ease;
+ border-style:inset;
+ border-width:0.1em;
+
+}
+.btn:hover{
+  box-shadow: none;
+  right:8px;
+
+}
+.btn:active{
+  box-shadow: 0 3px #666;
+  transform: translateY(2px)
+}
+/*selettore riferito al bottone +*/
+.aggiungi{
+
+  margin-bottom: 10px;
+}
+
+
 .menu-container{
   position: relative;
 }
@@ -77,4 +154,3 @@ a span{
   width: 100%;
   min-width:8rem;
 }
-

@@ -12,6 +12,7 @@ import { FoodPageComponent } from './components/pages/food-page/food-page.compon
 import { DinamicoUfficioComponent } from './components/partials/dinamico-ufficio/dinamico-ufficio.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { DinamicoUfficioComponent } from './components/partials/dinamico-ufficio
     FooterComponent,
     FoodPageComponent,
     DinamicoUfficioComponent,
+
   ],
   imports: [
     BrowserModule,
